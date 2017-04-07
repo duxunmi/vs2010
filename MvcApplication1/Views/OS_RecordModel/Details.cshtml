@@ -1,0 +1,22 @@
+﻿@model MvcApplication1.Models.OS_RecordModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>OS_RecordModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.queueno)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.queueno)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
